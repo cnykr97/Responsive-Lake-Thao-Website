@@ -1,0 +1,173 @@
+/* Web Fonts ----------------------- */
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.woff') format('woff');
+}
+
+/* Base Styles --------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.25em;
+  /* 20px on most screens */
+}
+
+body {
+  margin: 1rem;
+  color: #454959;
+  font: 300 100%/1.5 'Work Sans', sans-serif;
+  background-color: rgb(207, 207, 207);
+
+}
+
+h1,
+h2 {
+  font-family: 'Abolition Regular', Impact, Charcoal, sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow: 5px 5px 10px #454959;
+}
+
+h1::after {
+  content: '\2948';
+  display: block;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #f3753b;
+}
+
+img {
+  width: 100%;
+  /* responsive images */
+}
+
+
+/* Main Styles --------------------- */
+section {
+  margin-bottom: 10px;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header {
+  padding: 10vh 1rem;
+  margin: -1rem;
+  background-color: #f3753b;
+  color: white;
+  background: url('../img/mountains.jpg') center / cover no-repeat;
+}
+
+.title {
+  color: #454959;
+  font-weight: bold;
+}
+
+main {
+  hyphens: auto;
+}
+
+.wildlife {
+  background: url('../img/bear.jpg') center/cover no-repeat #454959;
+  box-shadow: 5px 5px 10px rgba(0, 10, 30, 0.8);
+  padding-bottom: 10px;
+}
+
+#wildlife {
+  padding: 20% 15%;
+  color: white;
+  margin-bottom: 15px;
+
+}
+
+.callout {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+  background-image: linear-gradient(to bottom, #f3753b, #979797);
+  color: white;
+  border-radius: 30px / 50px;
+  /* horizontal radius / vertical radius */
+  /* box-shadow: 3px 3px 10px rgba(0, 10, 30, 0.5); */
+}
+
+.clumn-section {
+  white-space: nowrap;
+}
+
+.column {
+  background-image: linear-gradient(to bottom, lightgrey, #16191e);
+  box-shadow: 5px 5px 10px rgba(0, 10, 30, 0.8);
+  color: white;
+  padding: 5%;
+  margin-bottom: 10px;
+}
+
+.column h3,
+p {
+  text-align: center;
+  padding: 1rem;
+  white-space: normal;
+}
+
+.column p {
+  text-align: left;
+}
+
+#back::after {
+  content: '  \219F';
+  display: inline;
+}
+
+
+/* Media Queries ------------------- */
+@media screen and (min-width: 800px) {
+  .column-section {
+    white-space: nowrap;
+  }
+
+  .column {
+    display: inline-block;
+    padding: 1%;
+    width: 49.8%;
+  }
+
+  .column h3,
+  .column p,
+  .column li {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .wildlife {
+    padding: 50% 10% 5%;
+  }
+
+  #wildlife {
+    padding: 0;
+  }
+
+  #wildlife p {
+    text-align: left;
+  }
+}
